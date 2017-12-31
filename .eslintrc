@@ -9,11 +9,12 @@
 
   "extends": ["airbnb", "prettier"],
 
-  "plugins": ["react", "jsx-a11y", "import", "prettier"],
+  "plugins": ["react", "jsx-a11y", "import", "prettier", "curry"],
 
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "func-names": ["error", "as-needed"],
-    "prettier/prettier": ["error"]
+    "prettier/prettier": ["error"],
+    "curry/arrow-parens": [2, "as-needed", { "requireForBlockBody": true, "curry": "never" }]
   }
 }
